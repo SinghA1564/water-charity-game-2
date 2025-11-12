@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Charity: Water Idle Clicker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="ripple-bg"></div>
+    <div class="container">
+        <main class="main-layout">
+            <section class="left-panel">
+                <header>
+                    <h1>Charity: Water Idle Clicker</h1>
+                </header>
+                <div class="stats">
+                    <div id="water-points-display">
+                        <span class="stat-label">Drops</span>
+                        <span id="water-points" class="stat-value">0</span>
+                    </div>
+                    <div id="water-per-second-display">
+                        <span class="stat-label">Drops per second</span>
+                        <span id="water-per-second" class="stat-value">0</span>
+                    </div>
+                </div>
+                <div class="droplet-container">
+                    <button id="water-droplet" title="Click to collect Drops" aria-label="Collect Drops">
+                        <img src="https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/72x72/1f4a7.png" alt="Water Droplet" class="droplet-img" />
+                    </button>
+                </div>
+            </section>
+            <aside class="right-panel">
+                <h2>Upgrades</h2>
+                <div id="shop-upgrades" class="shop-upgrades-scroll">
+                    <!-- Shop upgrades will be generated here by script.js -->
+                </div>
+            </aside>
+        </main>
+        <footer>
+            <a href="https://www.charitywater.org/">Donate Here</a>
+        </footer>
+    </div>
+    <!-- Difficulty selection screen -->
+    <div id="start-screen" class="start-screen">
+    <h1>Choose Your Difficulty</h1>
+    <button class="difficulty-btn" data-mode="easy">Easy</button>
+    <button class="difficulty-btn" data-mode="medium">Medium</button>
+    <button class="difficulty-btn" data-mode="hard">Hard</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
